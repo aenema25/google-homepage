@@ -4,11 +4,16 @@
     <title>Google</title>
     <style>
         body{
-            font-family: monospace;
+            font-family: 'Google Sans'; 
+            font-size:small;          
         }
         li{
             display:inline;
             padding:5px;
+        }
+        a{
+            text-decoration: none ;
+            color:black;
         }
         nav{
             float:right;
@@ -18,15 +23,22 @@
         }
         main{
             display:flex;
+            justify-content: center;
             align-items: center;
-            flex-direction: column;            
+            flex-direction: column;
+            height: 70vh;
+            
         }
+        main > div {
+            margin: 18px;
+            }
         footer{
             background-color:rgb(241, 238, 238);
             position:fixed;
             left:0;
             bottom:0;
-            width:100%;
+            width:100%;  
+            color:rgb(104, 104, 104);
         }
         .rightfooter {
             float:right;
@@ -34,13 +46,16 @@
         .leftfooter{
             float:left;
         }
+        .googleit{
+            text-align: center;
+        }
     </style>
 </head>
 </body>
 <nav>
 <ul>
-    <li>Gmail</li>
-    <li>Images</li>
+    <li><a href="padding:100px">Gmail</a></li>
+    <li><a href="https://www.google.cl/imghp?hl=en&authuser=0&ogbl">Imagenes</a></li>
 </ul>
 </nav>
 <main>
@@ -49,21 +64,22 @@
     </div>
     <div>
         <form class="googleit">
-            <input type="search" name="search">
+            <input type="search" name="search"  size="70">
+            <br>
             <br>
             <button type="submit" name="google">Google Search</button>
             <button type=submit" name="lucky">I'm Feeling Lucky</button>
         </form>
     </div>
     <div>
-        <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_9-OMdUqyvFqol8LHDMG7vA1cqjQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjRoqfr7ILvAhWlIrkGHdjnC84Q2ZgBCA0">Español</a></p>
+        <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_9-OMdUqyvFqol8LHDMG7vA1cqjQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjRoqfr7ILvAhWlIrkGHdjnC84Q2ZgBCA0">Español (Latinoamérica)<a></p>
     </div>
 </main>
 <footer>
     <ul>
         <li>Chile</li>
     </ul>  
-    <hr>
+    <hr size="1">
     <ul class="leftfooter">
         <li>About</li>
         <li>Images</li>
