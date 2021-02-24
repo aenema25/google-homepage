@@ -8,21 +8,33 @@
         }
         li{
             display:inline;
-            float:right;
             padding:5px;
         }
+        nav{
+            float:right;
+        }
         footer{
-            color:black;
+            background-color:rgb(241, 238, 238);
+            position:fixed;
+            left:0;
+            bottom:0;
+            width:100%;
+        }
+        .rightfooter {
+            float:right;
+        }
+        .leftfooter{
+            float:left;
         }
     </style>
 </head>
 </body>
-<nav-bar>
+<nav>
 <ul>
     <li>Gmail</li>
     <li>Images</li>
 </ul>
-</nav-bar>
+</nav>
 <main>
     <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     <form class="googleit">
@@ -36,14 +48,15 @@
     <ul>
         <li>Chile</li>
     </ul>  
-    <ul>
+    <hr>
+    <ul class="leftfooter">
         <li>About</li>
         <li>Images</li>
         <li>Advertising</li>
         <li>Business</li>
         <li>How Search Works</li>
-    </ul>  
-    <ul>
+    </ul>
+    <ul class="rightfooter">
         <li>Privacy</li>
         <li>Terms</li>
         <li>Settings</li>
