@@ -12,6 +12,14 @@
         }
         nav{
             float:right;
+            position:fixed;
+            right:0;
+            top:0;
+        }
+        main{
+            display:flex;
+            align-items: center;
+            flex-direction: column;            
         }
         footer{
             background-color:rgb(241, 238, 238);
@@ -36,13 +44,20 @@
 </ul>
 </nav>
 <main>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <form class="googleit">
-        <input type="search" name="search">
-        <button type="submit" name="google">Google Search</button>
-        <button type=submit" name="lucky">I'm Feeling Lucky</button>
-    </form>
-    <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_9-OMdUqyvFqol8LHDMG7vA1cqjQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjRoqfr7ILvAhWlIrkGHdjnC84Q2ZgBCA0">Español</a></p>
+    <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+    </div>
+    <div>
+        <form class="googleit">
+            <input type="search" name="search">
+            <br>
+            <button type="submit" name="google">Google Search</button>
+            <button type=submit" name="lucky">I'm Feeling Lucky</button>
+        </form>
+    </div>
+    <div>
+        <p>Google offered in: <a href="https://www.google.com/setprefs?sig=0_9-OMdUqyvFqol8LHDMG7vA1cqjQ%3D&hl=es-419&source=homepage&sa=X&ved=0ahUKEwjRoqfr7ILvAhWlIrkGHdjnC84Q2ZgBCA0">Español</a></p>
+    </div>
 </main>
 <footer>
     <ul>
